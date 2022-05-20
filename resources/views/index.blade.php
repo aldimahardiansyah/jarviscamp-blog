@@ -16,7 +16,7 @@
     <div class="container">
 
         <div class="d-flex justify-content-end">
-            <a href="/create" class="btn btn-primary">Create Post</a>
+            <a href="/post/create" class="btn btn-primary">Create Post</a>
         </div>
         <hr>
 
@@ -28,8 +28,9 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem cupiditate, a tempore delectus et, pariatur officia veniam laudantium quo impedit, id similique repellat eius fugiat incidunt aspernatur tenetur consequatur!</p>
                     </div>
                     <div class="card-footer">
-                        <a href="/edit" class="btn btn-success">Edit</a>
-                        <a href="/delete" class="btn btn-danger">Delete</a>
+                        <a href="/post/detail" class="btn btn-primary">Detail</a>
+                        <a href="/post/edit" class="btn btn-success">Edit</a>
+                        <a href="/post/delete" class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>
@@ -41,8 +42,9 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem cupiditate, a tempore delectus et, pariatur officia veniam laudantium quo impedit, id similique repellat eius fugiat incidunt aspernatur tenetur consequatur!</p>
                     </div>
                     <div class="card-footer">
-                        <a href="/edit" class="btn btn-success">Edit</a>
-                        <a href="/delete" class="btn btn-danger">Delete</a>
+                        <a href="/post/detail" class="btn btn-primary">Detail</a>
+                        <a href="/post/edit" class="btn btn-success">Edit</a>
+                        <a href="/post/delete" class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>
