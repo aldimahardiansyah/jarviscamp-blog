@@ -17,11 +17,14 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/create', function () {
+Route::get('/post/create', function () {
     return view('create');
 });
 
-Route::get('/edit', function () {
+Route::get('/post/edit', function () {
     return view('edit');
 });
 
+Route::get('/post/detail', function () {
+    return view('detail');
+});
