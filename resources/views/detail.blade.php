@@ -20,8 +20,8 @@
         </div>
         <hr>
 
-        <h2>Post 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ea, dicta culpa ipsa iusto hic iste quam cumque eius tempore perspiciatis, molestiae id itaque odio voluptatibus! In iusto quas error.</p>
+        <h2>{{ $post->title }}</h2>
+        <p>{{ $post->body }}</p>
     </div>
 
 

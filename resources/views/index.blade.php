@@ -21,33 +21,21 @@
         <hr>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Post 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem cupiditate, a tempore delectus et, pariatur officia veniam laudantium quo impedit, id similique repellat eius fugiat incidunt aspernatur tenetur consequatur!</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="/post/detail" class="btn btn-primary">Detail</a>
-                        <a href="/post/edit" class="btn btn-success">Edit</a>
-                        <a href="/post/delete" class="btn btn-danger">Delete</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Post 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem cupiditate, a tempore delectus et, pariatur officia veniam laudantium quo impedit, id similique repellat eius fugiat incidunt aspernatur tenetur consequatur!</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="/post/detail" class="btn btn-primary">Detail</a>
-                        <a href="/post/edit" class="btn btn-success">Edit</a>
-                        <a href="/post/delete" class="btn btn-danger">Delete</a>
+            @foreach($posts as $post)
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $post->title }}</h5>
+                            <p class="card-text">{{ $post->body }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/post/detail/{{ $post->id }}" class="btn btn-primary">Detail</a>
+                            <a href="/post/edit" class="btn btn-success">Edit</a>
+                            <a href="/post/delete/{{ $post->id }}" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 
